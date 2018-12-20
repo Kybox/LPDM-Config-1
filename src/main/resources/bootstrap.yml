@@ -1,0 +1,17 @@
+# SERVER
+server:
+  port: 28088
+
+# SPRING
+spring:
+  # CLOUD CONFIG
+  cloud:
+    config:
+      # OVERRIDE PROPERTIES AUTH
+      overrideNone: true
+      overrideSystemProperties: false
+      # SERVER
+      server:
+        git:
+          uri: https://github.com/vyjorg/LPDM-CloudConfig.git
+          clone-on-start: true
